@@ -1,9 +1,10 @@
-import './App.css';
-import 'bootstrap/scss/bootstrap.scss';
+import './App.scss';
+import 'bootstrap/scss/bootstrap.scss'
+import Navbar from './components/Navbar'
 
 function App() {
   return (
-   <h2>Dev&Prog</h2>
+   <Navbar/>
   );
 }
 
