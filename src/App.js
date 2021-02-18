@@ -3,6 +3,7 @@ import 'bootstrap/scss/bootstrap.scss'
 import Particles from 'react-particles-js'
 import Navbar from './components/Navbar'
 import Header from './components/Header'
+import AboutMe from './components/AboutMe' 
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
             type: 'square',
             stroke: {
               width: 6,
-              color: '#f9ab00'
+              color: '#709DA5'
             }
           }
         }
@@ -30,6 +31,7 @@ function App() {
     />
     <Navbar/>
     <Header/>
+    <AboutMe/>
   </>  
   );
 }

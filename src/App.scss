@@ -2,13 +2,15 @@
 $primary-dark: rgba(255,255,255,0);
 $primary-white: white;
 /*NAVBAR*/
+$navbarColor: #709DA5;
 $texteNavColor: rgb(255, 255, 255);
 $lineUpNavColor: orange;
 /*HEADER*/
 $titleColor: orange;
+$subTitleColor: white;
 $textDefilColor: white;
-$borderButton: red;
-$borderButtonHover: rgb(245, 92, 53);
+$borderButton: #709DA5;
+$borderButtonHover: #306F7B;
 
 .App {
   text-align: center;
@@ -59,6 +61,11 @@ nav {
 }
 
 /*------- MENU LINKS -------*/
+
+.navbar {
+  background-color: $navbarColor;
+}
+
 nav a.nav-link {
   letter-spacing: 0.0375rem;
   cursor: pointer;
@@ -124,6 +131,11 @@ nav ul li {
   text-transform: uppercase;
 }
 
+.main-info h2 {
+  color: $subTitleColor;
+  text-transform: uppercase;
+}
+
 /*------- TYPED TEXT -------*/
 .typed-text {
   font-size: 2rem;
@@ -169,5 +181,31 @@ nav ul li {
 @media(max-width: 768px) {
   .particles-canvas {
     display: none;
+  }
+}
+
+
+/**************************** ABOUT ME *******************************/
+.photoWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profilImg {
+  width: 16rem;
+  border-radius: 50%;
+  padding: .3rem;
+  border: 1px solid $borderButton;
+}
+
+.aboutHeading {
+  color: $borderButton;
+  text-transform: uppercase;
+}
+
+@media(max-width: 468px) {
+  .profilImg {
+    width: 10rem;
   }
 }
